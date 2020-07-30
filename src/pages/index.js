@@ -9,7 +9,7 @@ import Link from "../components/link"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Grid container direction="column" spacing={2}>
+    <Grid container direction="column" spacing={4}>
       <Grid item>
         <Typography variant="h1">
           Hi, Creature
@@ -20,13 +20,13 @@ const IndexPage = () => (
         <Typography variant="h5">I am the dev you're looking for.</Typography>
       </Grid>
     </Grid>
-    <Link to="/photography/">
-      <Grid item style={{ maxWidth: `900px`, marginBottom: `1.45rem` }}>
-        <Image />
+    <Link to="/photography/" spacing={4}>
+      <Grid item style={{ padding: '2rem 0' }} >
+        <Image style={{ maxWidth: `900px`, marginBottom: `1.45rem` }}/>
         <Typography>photography</Typography>
       </Grid>   
-    </Link>     
-    <Grid container>
+    </Link>   
+    <Grid container spacing={4}>
       <Grid item>
         <Typography>
           <Link to="/code/">code</Link>      
