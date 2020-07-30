@@ -34,9 +34,6 @@ const IndexPage = () => (
         <Typography>
           <Link to="https://www.mypronouns.org/they-them">pronouns</Link>
         </Typography>
-        <Typography>
-          <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-        </Typography>
       </Grid>      
     </Grid>    
   </Layout>
