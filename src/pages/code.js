@@ -16,7 +16,7 @@ const Code = () => (
         Welcome to some cool code things
       </Typography>
     </Grid>
-    <Link to="/">Go back to the homepage</Link>
+    <Link to="/">go home</Link>
   </Layout>
 )
 

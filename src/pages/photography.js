@@ -12,7 +12,7 @@ const Photography = () => (
       <Typography variant="h4">
         Some things I say about photography: Look at all these things I say
       </Typography>
-      <Link to="/">Go back to the homepage</Link>
+      <Link to="/">go home</Link>
     </Grid>
     
   </Layout>
