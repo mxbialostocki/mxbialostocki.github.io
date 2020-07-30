@@ -28,7 +28,7 @@ const IndexPage = () => (
     <Grid container>
       <Grid item>
         <Typography>
-          <Link to="/page-2/">Go to page 2</Link>      
+          <Link to="/code/">go to code</Link>      
         </Typography>
         <Typography>
           <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
