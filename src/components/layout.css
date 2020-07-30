@@ -47,6 +47,15 @@ a:active,
 a:hover {
   outline-width: 0;
 }
+a:active {
+  color: red;
+}
+a:-webkit-any-link,
+a:-moz-any-link,
+a:any-link {
+  text-decoration: none;
+  color: #000000;
+}
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
