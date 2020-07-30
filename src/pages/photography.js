@@ -9,11 +9,8 @@ const Photography = () => (
   <Layout>
     <SEO title="Photography" />
     <Grid container direction="column">
-      <Typography variant="h1">
-        Hi from this photography page!
-      </Typography>
       <Typography variant="h4">
-        Some things I say about photography:
+        Some things I say about photography: Look at all these things I say
       </Typography>
       <Link to="/">Go back to the homepage</Link>
     </Grid>
