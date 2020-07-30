@@ -12,17 +12,19 @@ const IndexPage = () => (
     <Grid container direction="column" spacing={2}>
       <Grid item>
         <Typography variant="h1">
-          Hi, People
+          Hi, Creature
         </Typography>
       </Grid>
       <Grid item>
-        <Typography variant="h5">Welcome to your new Gatsby site.</Typography>
-        <Typography variant="h5">Now go build something great.</Typography>
+        <Typography variant="h5">My name is Bam.</Typography>
+        <Typography variant="h5">I am the dev you're looking for.</Typography>
       </Grid>
     </Grid>
-    <Grid item style={{ maxWidth: `900px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </Grid>    
+    <Link to="/photography/">
+      <Grid item style={{ maxWidth: `900px`, marginBottom: `1.45rem` }}>
+        <Image />
+      </Grid>   
+    </Link>     
     <Grid container>
       <Grid item>
         <Typography>
