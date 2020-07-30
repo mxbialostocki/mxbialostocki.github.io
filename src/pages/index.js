@@ -23,12 +23,16 @@ const IndexPage = () => (
     <Link to="/photography/">
       <Grid item style={{ maxWidth: `900px`, marginBottom: `1.45rem` }}>
         <Image />
+        <Typography>photography</Typography>
       </Grid>   
     </Link>     
     <Grid container>
       <Grid item>
         <Typography>
-          <Link to="/code/">go to code</Link>      
+          <Link to="/code/">code</Link>      
+        </Typography>
+        <Typography>
+          <Link to="https://www.mypronouns.org/they-them">pronouns</Link>
         </Typography>
         <Typography>
           <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
