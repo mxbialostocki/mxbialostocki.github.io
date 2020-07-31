@@ -2,7 +2,7 @@ import React from "react"
 // import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { Grid, Container, Typography } from '@material-ui/core'
+import { Grid, Typography } from '@material-ui/core'
 
 export function PhotographyGallery () {
   const data = useStaticQuery(graphql`
@@ -32,7 +32,7 @@ export function PhotographyGallery () {
   `)
   return (
   <React.Fragment>
-    <Grid container direction="row" sm={12} spacing={1} justify="space-between">
+    <Grid container direction="row" spacing={1} justify="space-between">
       <Grid container item sm={6} spacing={1} direction="column">
         <Grid item>
           <Img fluid={data.portrait.childImageSharp.fluid} />
@@ -43,8 +43,6 @@ export function PhotographyGallery () {
         <Grid item>
           <Img fluid={data.craft.childImageSharp.fluid} />
           <Typography>craft</Typography>
-        </Grid>
-        <Grid item>
           <Img fluid={data.event.childImageSharp.fluid} />
           <Typography>event</Typography>
         </Grid>        
