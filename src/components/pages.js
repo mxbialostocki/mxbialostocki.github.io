@@ -31,13 +31,9 @@ const Pages = () => {
     }
   `)
 
-  const style = {
-    position: 'relative'
-  }
-
   return (    
     <React.Fragment>
-      <Grid container direction="column" spacing={2} style={style}>
+      <Grid container direction="column" spacing={2} >
         
           <Grid item>
             <Link to="/code">
