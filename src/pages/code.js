@@ -16,8 +16,14 @@ const Code = () => (
     <Typography variant="h4">
       Welcome to some cool code things
     </Typography>
-    <ProjectWSIR />
-    <ProjectScaffolding />
+    <Grid container direction="column" justify="space-between" spacing={10}>
+      <Grid item>
+        <ProjectWSIR />
+      </Grid>
+      <Grid item>
+        <ProjectScaffolding />
+      </Grid>
+    </Grid>    
     <Link to="/">go home</Link>
   </Layout>
 )

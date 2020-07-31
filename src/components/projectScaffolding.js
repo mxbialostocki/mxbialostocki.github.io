@@ -17,14 +17,10 @@ const ProjectScaffolding = () => {
     }
   `)
 
-  const style = {
-    card: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      flexDirection: 'row',
-    },    
+  const style = {  
     imgContainer: {
-      maxWidth: '100%'
+      maxWidth: '100%',
+      padding: '20px 0'
     },
     img: {
       maxWidth: '80%',
@@ -35,7 +31,7 @@ const ProjectScaffolding = () => {
 
   return (    
     <React.Fragment>
-      <Grid container direction="column" spacing={2}>
+      <Grid container direction="column" spacing={2} style={style.imgContainer}>
 
           <Grid item>
             <Img fluid={data.scaffoldingprimary.childImageSharp.fluid} style={style.img}/>

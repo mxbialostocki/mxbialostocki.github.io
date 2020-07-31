@@ -4,12 +4,7 @@ import Link from './link'
 import { Grid, Typography } from '@material-ui/core'
 import Img from "gatsby-image"
 
-const style = {
-  card: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    flexDirection: 'row',
-  },    
+const style = {  
   imgContainer: {
     maxWidth: '100%'
   },
@@ -37,7 +32,7 @@ const ProjectWSIR = () => {
 
   return (    
     <React.Fragment>
-      <Grid container direction="column" spacing={2}>
+      <Grid container direction="column" spacing={2} style={style.imgContainer}>
 
           <Grid item>
             <Img fluid={data.whatshouldireadprimary.childImageSharp.fluid} style={style.img}/>
