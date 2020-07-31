@@ -4,6 +4,22 @@ import Link from './link'
 import { Grid, Typography } from '@material-ui/core'
 import Img from "gatsby-image"
 
+const style = {
+  card: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+  },    
+  imgContainer: {
+    maxWidth: '100%'
+  },
+  img: {
+    maxWidth: '80%',
+    boxShadow: '5px 5px 10px grey',
+    margin: '2rem 0'
+  }
+}
+
 const ProjectWSIR = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -17,21 +33,7 @@ const ProjectWSIR = () => {
     }
   `)
 
-  const style = {
-    card: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      flexDirection: 'row',
-    },    
-    imgContainer: {
-      maxWidth: '100%'
-    },
-    img: {
-      maxWidth: '80%',
-      boxShadow: '5px 5px 10px grey',
-      margin: '2rem 0'
-    }
-  }
+  
 
   return (    
     <React.Fragment>
@@ -50,7 +52,7 @@ const ProjectWSIR = () => {
               <Typography>github</Typography>
             </Link>
           </Grid>
-          
+
         </Grid>
     </React.Fragment>
   )
