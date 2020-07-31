@@ -4,18 +4,18 @@ import { Grid, Typography } from '@material-ui/core'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ProjectWSIR from '../components/projectWSIR'
 
 const Code = () => (
   <Layout>
-    <SEO title="Page two" />
-    <Grid container direction="column">
-      <Typography variant="h1">
-        Code
-      </Typography>
-      <Typography variant="h4">
-        Welcome to some cool code things
-      </Typography>
-    </Grid>
+    <SEO title="code" />
+    <Typography variant="h1">
+      Code
+    </Typography>
+    <Typography variant="h4">
+      Welcome to some cool code things
+    </Typography>
+    <ProjectWSIR />
     <Link to="/">go home</Link>
   </Layout>
 )
