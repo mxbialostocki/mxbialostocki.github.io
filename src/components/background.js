@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import BackgroundImage from 'gatsby-background-image'
 
-const Background = ({ className }) => (
+const Background = ({ className, children }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -27,16 +27,23 @@ const Background = ({ className }) => (
           fluid={imageData}
           backgroundColor={`#040e18`}
         >
-          <div style={{ width: '100vw', height: '100vh' }}></div>
+          <div>{children}</div>
         </BackgroundImage>
       )
     }}
   />
 )
 
+Background.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string.isRequired
+}
+
 const StyledBackground = styled(Background)`
-  width: 100%;
-  background-position: bottom center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-position: top center;
   background-repeat: repeat-y;
   background-size: cover;
 `

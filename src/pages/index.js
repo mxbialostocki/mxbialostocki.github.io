@@ -4,13 +4,10 @@ import { Grid, Typography } from '@material-ui/core'
 import Layout from "../components/layout"
 import Pages from "../components/pages"
 import SEO from "../components/seo"
-// import StyledBackground from '../components/background'
 
 const IndexPage = () => (
   <React.Fragment>
     <Layout>
-    {/* <StyledBackground style={{ position: 'absolute', zIndex: '0' }}></StyledBackground> */}
-
       <SEO title="Home" />
       <Grid container direction="column" spacing={4}>
         <Grid item>

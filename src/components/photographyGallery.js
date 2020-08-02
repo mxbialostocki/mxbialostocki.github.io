@@ -39,7 +39,7 @@ export function PhotographyGallery () {
           <Typography>portrait</Typography>
         </Grid>
       </Grid>      
-      <Grid container item sm={6} spacing={1} direction="column" justify="space-between">
+      <Grid container item sm={6} spacing={1} direction="column" justify="space-evenly">
         <Grid item>
           <Img fluid={data.craft.childImageSharp.fluid} />
           <Typography>craft</Typography>
