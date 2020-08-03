@@ -40,7 +40,7 @@ const ProjectScaffolding = () => {
               <Typography variant="h2">scaffolding</Typography>
             </Link>
 
-            <Typography variant="h5">// React, Javascript, Poetry</Typography>
+            <Typography variant="h5">React, Javascript, Poetry</Typography>
 
             <Link to="https://github.com/mxbialostocki/scaffolding">
               <Typography>github</Typography>

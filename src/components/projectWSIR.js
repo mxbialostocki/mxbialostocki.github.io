@@ -41,7 +41,7 @@ const ProjectWSIR = () => {
               <Typography variant="h2">what should i read</Typography>
             </Link>
 
-            <Typography variant="h5">// React, GraphQL, MongoDB</Typography>
+            <Typography variant="h5">React, GraphQL, MongoDB</Typography>
 
             <Link to="https://github.com/mxbialostocki/cassidy">
               <Typography>github</Typography>
