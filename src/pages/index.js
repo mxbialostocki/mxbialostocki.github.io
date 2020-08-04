@@ -7,12 +7,12 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <React.Fragment>
-    <Layout>
+    <Layout maxWidth={'80vw'}>
       <SEO title="Home" />
       <Grid container direction="column" spacing={4}>
         <Grid item>
           <Typography variant="h1">
-            Hi, Creature
+            hello, Creature
           </Typography>
         </Grid>
         

@@ -7,7 +7,7 @@ import StyledBackground from '../components/background'
 
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, maxWidth='60vw' }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >

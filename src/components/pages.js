@@ -33,24 +33,26 @@ const Pages = () => {
 
   return (    
     <React.Fragment>
-      <Grid container direction="column" spacing={2} >
+      <Grid container direction='row' spacing={4} >
         
-          <Grid item>
+          <Grid item lg={4} md={6} sm={12}>
             <Link to="/code">
               <Img fluid={data.code.childImageSharp.fluid} />
               <Typography>code</Typography>
             </Link>
-          
+          </Grid>
+          <Grid item lg={4} md={6} sm={12}>
             <Link to="/photography">
               <Img fluid={data.photography.childImageSharp.fluid} />
               <Typography>photography</Typography>
             </Link>
-          
+          </Grid>
+          <Grid item lg={4} md={12}>
             <Link to="https://www.mypronouns.org/they-them">
               <Img fluid={data.pronouns.childImageSharp.fluid} />
               <Typography>pronouns</Typography>
             </Link>
-          </Grid>        
+          </Grid>         
 
       </Grid>         
     </React.Fragment>
