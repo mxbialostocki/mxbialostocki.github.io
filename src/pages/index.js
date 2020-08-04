@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <React.Fragment>
-    <Layout maxWidth={'80vw'}>
+    <Layout maxWidth={'70vw'}>
       <SEO title="Home" />
       <Grid container direction="column" spacing={4}>
         <Grid item>

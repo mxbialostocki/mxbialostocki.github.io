@@ -35,19 +35,19 @@ const Pages = () => {
     <React.Fragment>
       <Grid container direction='row' spacing={4} >
         
-          <Grid item lg={4} md={6} sm={12}>
+          <Grid item lg={4} md={6} xs={12}>
             <Link to="/code">
               <Img fluid={data.code.childImageSharp.fluid} />
               <Typography>code</Typography>
             </Link>
           </Grid>
-          <Grid item lg={4} md={6} sm={12}>
+          <Grid item lg={4} md={6} xs={12}>
             <Link to="/photography">
               <Img fluid={data.photography.childImageSharp.fluid} />
               <Typography>photography</Typography>
             </Link>
           </Grid>
-          <Grid item lg={4} md={12}>
+          <Grid item lg={4} md={12} xs={12}>
             <Link to="https://www.mypronouns.org/they-them">
               <Img fluid={data.pronouns.childImageSharp.fluid} />
               <Typography>pronouns</Typography>
