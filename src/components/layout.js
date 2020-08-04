@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import StyledBackground from '../components/background'
+// import StyledBackground from '../components/background'
 
 import "./layout.css"
 
@@ -20,7 +20,6 @@ const Layout = ({ children, maxWidth='60vw' }) => {
 
   return (
     <React.Fragment>
-      <StyledBackground>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -36,7 +35,6 @@ const Layout = ({ children, maxWidth='60vw' }) => {
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
-      </StyledBackground>
 
     </React.Fragment>
   )
