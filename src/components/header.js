@@ -1,6 +1,7 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import PropTypes from "prop-types"
+import { Link } from "gatsby"
+import { Grid, Typography } from "@material-ui/core"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -12,51 +13,28 @@ const Header = ({ siteTitle }) => (
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        paddingBottom: `1.45rem 0`,
       }}
     >
-      <h1 style={{ margin: 0, textDecoration: 'none' }}>
-      <ul>
-        <li>
-            <Link
-            to="/"
-            style={{
-              color: `#ffffff`,
-              textDecoration: `none`,
-            }}
-          >
-            {siteTitle}  
-          </Link>
-          </li>
-          <span>
-            &nbsp;&nbsp;&nbsp;
-          </span> 
-          <li><Link to="/photography"
-            style={{
-              color: `#ffffff`,
-              textDecoration: `none`,
-            }}
-            >
-              photography  
-            </Link>
-            </li><span>
-            &nbsp;&nbsp;&nbsp;
-          </span>
-            <li><Link to="/code"
-            style={{
-              color: `#ffffff`,
-              textDecoration: `none`,
-            }}
-            >
-              code  
-            </Link>
-          </li>
-        </ul>
+      <Grid container direction='row' justify='flex-start' alignItems='flex-start' spacing={2}>
         
-        
-          
-      </h1>
+          <Grid item lg={4} xs={12}>
+            <Link to="/">
+              <Typography variant={"h5"}>{siteTitle}</Typography>
+            </Link>
+          </Grid>
+          <Grid item lg={4} xs={12}>
+            <Link to="/photography">
+              <Typography variant={"h5"}>photography</Typography>  
+            </Link>            
+          </Grid>
+          <Grid item lg={4} xs={12}>
+            <Link to="/code">
+              <Typography variant={"h5"}>code</Typography>  
+            </Link>            
+          </Grid>
+
+      </Grid>
     </div>
   </header>
 )
