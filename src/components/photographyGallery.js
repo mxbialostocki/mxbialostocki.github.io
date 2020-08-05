@@ -1,10 +1,9 @@
 import React from "react"
-// import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Grid, Typography } from '@material-ui/core'
 
-export function PhotographyGallery () {
+const PhotographyGallery = () => {
   const data = useStaticQuery(graphql`
     query {
       portrait: file(relativePath: { eq: "mxbialostocki191126-sgts04-1129.jpg" }) {
@@ -31,29 +30,29 @@ export function PhotographyGallery () {
     }
   `)
   return (
-  <React.Fragment>
-    <Grid container direction="row" spacing={1} justify="space-between">
-      <Grid container item sm={6} spacing={1} direction="column">
-        <Grid item>
-          <Img fluid={data.portrait.childImageSharp.fluid} />
-          <Typography>portrait</Typography>
-        </Grid>
+    <React.Fragment>
+      <Grid container direction='row' spacing={4} >
+        
+          <Grid item lg={3} md={6} xs={12}>
+            <Img fluid={data.portrait.childImageSharp.fluid} />
+            <Typography variant="h5">portrait</Typography>
+          </Grid>
+          <Grid item lg={3} md={6} xs={12}>
+            <Img fluid={data.event.childImageSharp.fluid} />
+            <Typography variant="h5">event</Typography>
+          </Grid>
+          <Grid item lg={3} md={6} xs={12}>
+            <Img fluid={data.craft.childImageSharp.fluid} />
+            <Typography variant="h5">craft</Typography>
+          </Grid>
+          <Grid item lg={3} md={6} xs={12}>
+            <Img fluid={data.event.childImageSharp.fluid} />
+            <Typography variant="h5">event</Typography>
+          </Grid>
+
       </Grid>      
-      <Grid container item sm={6} spacing={1} direction="column" justify="space-evenly">
-        <Grid item>
-          <Img fluid={data.craft.childImageSharp.fluid} />
-          <Typography>craft</Typography>
-          <Img fluid={data.event.childImageSharp.fluid} />
-          <Typography>event</Typography>
-        </Grid>        
-      </Grid>
-    </Grid>            
-  </React.Fragment>  
+    </React.Fragment>
   )
 }
-
-// PhotographyGallery.propTypes = {
-//   children: PropTypes.node.isRequired,
-// }
 
 export default PhotographyGallery
