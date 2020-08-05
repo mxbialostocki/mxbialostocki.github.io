@@ -12,13 +12,13 @@ const IndexPage = () => (
       <Grid container direction="column" spacing={4}>
 
         <Grid item>
-          <Typography variant="h1">hello, Creature</Typography>
+          <Typography variant="h2">hello, Creature</Typography>
         </Grid>        
         <Grid item>
           <Typography variant="h5">My name is Bam.</Typography>
           <Typography variant="h5">I am the dev you're looking for.</Typography>
         </Grid>
-        
+
       </Grid>
       <Pages />
     </Layout>
