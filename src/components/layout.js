@@ -4,9 +4,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Grid, Typography, Link } from '@material-ui/core'
 
 import Header from "./header"
-// import StyledBackground from '../components/background'
 
 import "./layout.css"
+import useStyle from "../../plugins/custom-mui-theme/theme/custom"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,22 +18,19 @@ const Layout = ({ children }) => {
       }
     }
   `)
+  const styles = useStyle()
 
   return (
     <React.Fragment>
-      <Grid container direction="row" justify="space-between" style={{
-          margin: `0 auto`,
-          maxWidth: '70vw',
-          height: '100vh',
-          padding: `0 1.0875rem 1.45rem`,
-        }}>
+      <Grid container direction="row" justify="space-between" className={styles.layout}>
 
         <Grid item xs={12}>
           <Header siteTitle={data.site.siteMetadata.title} />
         </Grid>
         <Grid item xs={12}>
           <main>{children}</main>
-        </Grid>        
+        </Grid>
+
         <Grid container item xs={12} alignContent='flex-end'>
 
           <footer>          
