@@ -38,19 +38,19 @@ const Pages = () => {
           <Grid item lg={4} md={6} xs={12}>
             <Link to="/404">
               <Img fluid={data.code.childImageSharp.fluid} />
-              <Typography>code</Typography>
+              <Typography variant="h5">code</Typography>
             </Link>
           </Grid>
           <Grid item lg={4} md={6} xs={12}>
             <Link to="/404">
               <Img fluid={data.photography.childImageSharp.fluid} />
-              <Typography>photography</Typography>
+              <Typography variant="h5">photography</Typography>
             </Link>
           </Grid>
           <Grid item lg={4} md={12} xs={12}>
             <Link to="https://www.mypronouns.org/they-them">
               <Img fluid={data.pronouns.childImageSharp.fluid} />
-              <Typography>pronouns</Typography>
+              <Typography variant="h5">pronouns</Typography>
             </Link>
           </Grid>         
 

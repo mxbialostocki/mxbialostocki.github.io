@@ -13,22 +13,22 @@ const Header = ({ siteTitle }) => (
     <div
       style={{
         margin: `0 auto`,
-        paddingBottom: `1.45rem 0`,
+        padding: `1.45rem 0`,
       }}
     >
       <Grid container direction='row' justify='flex-start' alignItems='flex-start' spacing={2}>
         
-          <Grid item lg={4} xs={12}>
+          <Grid item lg={3} xs={12}>
             <Link to="/">
               <Typography variant={"h5"}>{siteTitle}</Typography>
             </Link>
           </Grid>
-          <Grid item lg={4} xs={12}>
+          <Grid item lg={3} xs={12}>
             <Link to="/photography">
               <Typography variant={"h5"}>photography</Typography>  
             </Link>            
           </Grid>
-          <Grid item lg={4} xs={12}>
+          <Grid item lg={3} xs={12}>
             <Link to="/code">
               <Typography variant={"h5"}>code</Typography>  
             </Link>            
