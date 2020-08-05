@@ -36,13 +36,13 @@ const Pages = () => {
       <Grid container direction='row' spacing={4} >
         
           <Grid item lg={4} md={6} xs={12}>
-            <Link to="/code">
+            <Link to="/404">
               <Img fluid={data.code.childImageSharp.fluid} />
               <Typography>code</Typography>
             </Link>
           </Grid>
           <Grid item lg={4} md={6} xs={12}>
-            <Link to="/photography">
+            <Link to="/404">
               <Img fluid={data.photography.childImageSharp.fluid} />
               <Typography>photography</Typography>
             </Link>
