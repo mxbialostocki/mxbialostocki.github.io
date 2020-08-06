@@ -5,6 +5,7 @@ import useStyles from '../../plugins/custom-mui-theme/theme/custom'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import ContactForm from '../components/contactForm'
 
 const ContactPage = () => {
   const { primary } = useStyles()
@@ -20,9 +21,7 @@ const ContactPage = () => {
           </Grid>
           
           <Grid item xs={12}>
-            <Typography variant="h5">
-              text
-            </Typography>
+            <ContactForm />
           </Grid>
         </Grid>
       </Layout>
