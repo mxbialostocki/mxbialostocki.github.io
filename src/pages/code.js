@@ -10,10 +10,7 @@ import ProjectScaffolding from '../components/projectScaffolding'
 const Code = () => (
   <Layout>
     <SEO title="code" />
-    <Typography variant="h1">
-      Code
-    </Typography>
-    <Typography variant="h4">
+    <Typography variant="h5">
       Welcome to some cool code things
     </Typography>
     <Grid container direction="column" justify="space-between" spacing={10}>
