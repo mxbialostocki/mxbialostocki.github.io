@@ -4,11 +4,11 @@ import { Grid, Typography } from "@material-ui/core"
 
 import Link from '../components/link'
 
-import useStyle from "../../plugins/custom-mui-theme/theme/custom"
+import useStyles from "../../plugins/custom-mui-theme/theme/custom"
 
 const Header = ({ siteTitle }) => {
 
-  const { header, headerWrap } = useStyle()
+  const { header, headerWrap } = useStyles()
 
   return (
     <React.Fragment>
