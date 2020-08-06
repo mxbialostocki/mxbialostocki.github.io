@@ -19,7 +19,7 @@ const ProjectScaffolding = () => {
     }
   `)
 
-  const [ projectHeroContainer, projectHero ] = useStyle()
+  const { projectHeroContainer, projectHero } = useStyle()
 
   return (    
     <React.Fragment>
@@ -29,7 +29,7 @@ const ProjectScaffolding = () => {
             <Img fluid={data.scaffoldingprimary.childImageSharp.fluid} className={projectHero}/>
           
             <Link to="https://scaffolding-xtw.herokuapp.com/">
-              <Typography variant="h2">scaffolding</Typography>
+              <Typography variant="h3">scaffolding</Typography>
             </Link>
 
             <Typography variant="h5">React, Javascript, Poetry</Typography>

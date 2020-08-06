@@ -26,7 +26,6 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '100%'
   },
   projectHero: {
-    maxWidth: '80%',
     boxShadow: '5px 5px 10px grey',
     margin: '2rem 0'
   }

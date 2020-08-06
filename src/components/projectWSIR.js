@@ -19,7 +19,7 @@ const ProjectWSIR = () => {
     }
   `)
 
-  const [ projectHeroContainer, projectHero ] = useStyle()
+  const { projectHeroContainer, projectHero } = useStyle()
 
   return (    
     <React.Fragment>
@@ -29,7 +29,7 @@ const ProjectWSIR = () => {
             <Img fluid={data.whatshouldireadprimary.childImageSharp.fluid} className={projectHero}/>
           
             <Link to="https://whatshouldiread-cassidy.herokuapp.com/">
-              <Typography variant="h2">what should i read</Typography>
+              <Typography variant="h3">what should i read</Typography>
             </Link>
 
             <Typography variant="h5">React, GraphQL, MongoDB</Typography>
