@@ -10,12 +10,9 @@ const Photography = () => (
     <Layout>
       <SEO title="Photography" />
       <Grid container direction="column" spacing={4}>
-
+        
         <Grid item>
-          <Typography variant="h2">photography</Typography>
-        </Grid>
-        <Grid item>
-          <Typography variant="h5">
+          <Typography variant="body1">
             Some things I say about photography: Look at all these things I say
           </Typography>
         </Grid>
