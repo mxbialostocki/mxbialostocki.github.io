@@ -31,6 +31,11 @@ const Header = ({ siteTitle }) => {
                   <Typography variant={"h5"}>code</Typography>  
                 </Link>            
               </Grid>
+              <Grid item lg={3} xs={12}>
+                <Link to="/contact">
+                  <Typography variant={"h5"}>contact</Typography>  
+                </Link>            
+              </Grid>
 
           </Grid>
         </div>
