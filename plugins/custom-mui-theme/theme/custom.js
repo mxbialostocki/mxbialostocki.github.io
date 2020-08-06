@@ -1,6 +1,9 @@
 import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles((theme) => ({
+  primary: {
+    color: '#f50057'
+  },
   layout: {
     margin: `0 auto`,
     maxWidth: '70vw',
