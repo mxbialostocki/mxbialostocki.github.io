@@ -4,16 +4,7 @@ import Link from './link'
 import { Grid, Typography } from '@material-ui/core'
 import Img from "gatsby-image"
 
-const style = {  
-  imgContainer: {
-    maxWidth: '100%'
-  },
-  img: {
-    maxWidth: '80%',
-    boxShadow: '5px 5px 10px grey',
-    margin: '2rem 0'
-  }
-}
+import useStyle from '../../plugins/custom-mui-theme/theme/custom'
 
 const ProjectWSIR = () => {
   const data = useStaticQuery(graphql`
@@ -28,14 +19,14 @@ const ProjectWSIR = () => {
     }
   `)
 
-  
+  const [ projectHeroContainer, projectHero ] = useStyle()
 
   return (    
     <React.Fragment>
-      <Grid container direction="column" spacing={2} style={style.imgContainer}>
+      <Grid container direction="column" spacing={2} className={projectHeroContainer}>
 
           <Grid item>
-            <Img fluid={data.whatshouldireadprimary.childImageSharp.fluid} style={style.img}/>
+            <Img fluid={data.whatshouldireadprimary.childImageSharp.fluid} className={projectHero}/>
           
             <Link to="https://whatshouldiread-cassidy.herokuapp.com/">
               <Typography variant="h2">what should i read</Typography>
