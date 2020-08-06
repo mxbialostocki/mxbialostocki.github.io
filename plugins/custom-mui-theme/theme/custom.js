@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
   headerWrap: {
     margin: `0 auto`,
-    padding: `1.45rem 0`,
+    padding: `1rem 0`,
     borderBottom: 'solid #f50057 .5px'
   }
 }));
