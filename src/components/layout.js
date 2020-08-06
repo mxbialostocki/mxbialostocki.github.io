@@ -18,6 +18,7 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
   const styles = useStyle()
 
   return (
