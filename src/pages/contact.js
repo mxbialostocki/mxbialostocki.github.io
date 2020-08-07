@@ -14,15 +14,16 @@ const ContactPage = () => {
       <Layout>
         <SEO title='Contact'/>
         <Grid container direction="column" spacing={4}>
+
           <Grid item xs={12}>
             <Typography variant="h5">
-              There is a range of ways we can work together. Drop me a note to book dev work or a photography contract, or give me a call on <span className={primary}>+64 0274 658 977</span>.
+              There is a range of ways we can work together. Drop me a note to book dev work or a photography contract, or give me a call on <span className={primary} style={{ display: 'inline-block' }}>+64 0274 658 977</span>.
             </Typography>
           </Grid>
-          
           <Grid item xs={12}>
             <ContactForm />
           </Grid>
+
         </Grid>
       </Layout>
     </React.Fragment>
