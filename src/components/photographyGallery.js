@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { Grid, Typography } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 
 const PhotographyGallery = () => {
   const data = useStaticQuery(graphql`
@@ -45,7 +45,7 @@ const PhotographyGallery = () => {
   `)
   return (
     <React.Fragment>
-      <Grid container direction='row' spacing={4} >
+      <Grid container direction='row' spacing={2} >
         
           <Grid item md={6} xs={12}>
             <Img fluid={data.portrait1.childImageSharp.fluid} />
