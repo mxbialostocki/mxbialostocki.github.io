@@ -46,7 +46,7 @@ const Projects = () => {
             <Typography variant="body1" className={projectBody}>React, GraphQL, MongoDB</Typography>
           </Link>
           <Link to="https://github.com/mxbialostocki/cassidy">
-            <Typography variant="h5" className={projectBody}>github</Typography>
+            <Typography variant="body1" className={projectBody}>github</Typography>
           </Link>
         </Grid>
         <Grid item md={6} xs={12} className={projectHeroContainer}>
@@ -56,7 +56,7 @@ const Projects = () => {
             <Typography variant="body1" className={projectBody}>React, Javascript, Poetry</Typography>
           </Link>
           <Link to="https://github.com/mxbialostocki/scaffolding">
-            <Typography variant="h5" className={projectBody}>github</Typography>
+            <Typography variant="body1" className={projectBody}>github</Typography>
           </Link>
         </Grid>
         <Grid item md={6} xs={12} className={projectHeroContainer}>
@@ -66,7 +66,7 @@ const Projects = () => {
             <Typography variant="body1" className={projectBody}>Gatsby, React, Javascript</Typography>
           </Link>
           <Link to="https://github.com/mxbialostocki/scaffolding">
-            <Typography variant="h5" className={projectBody}>github</Typography>
+            <Typography variant="body1" className={projectBody}>github</Typography>
           </Link>
         </Grid>
 
