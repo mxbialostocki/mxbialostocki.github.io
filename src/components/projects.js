@@ -63,7 +63,7 @@ const Projects = () => {
           <Link to="https://scaffolding-xtw.herokuapp.com/">
             <Img fluid={data.mxbialostocki.childImageSharp.fluid} className={projectHero}/>
             <Typography variant="h4" className={projectBody}>this site</Typography>
-            <Typography variant="body1" className={projectBody}>Gatsby, React, Javascript</Typography>
+            <Typography variant="body1" className={projectBody}>Gatsby, Material-UI, React</Typography>
           </Link>
           <Link to="https://github.com/mxbialostocki/scaffolding">
             <Typography variant="body1" className={projectBody}>github</Typography>
