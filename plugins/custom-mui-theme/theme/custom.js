@@ -26,11 +26,13 @@ const useStyles = makeStyles((theme) => ({
     borderBottom: 'solid #f50057 .5px'
   },
   projectHeroContainer: {
-    maxWidth: '100%'
+    maxWidth: '100%',
+    padding: '.5rem',
+    marginBottom: '.5rem'
   },
   projectHero: {
     boxShadow: '5px 5px 10px grey',
-    margin: '2rem 0'
+    margin: '2rem 0',
   }
 }));
 
