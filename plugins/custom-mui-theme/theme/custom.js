@@ -8,7 +8,8 @@ const useStyles = makeStyles((theme) => ({
     margin: `0 auto`,
     maxWidth: '70vw',
     [theme.breakpoints.down('sm')]: {
-      maxWidth: '90vw'
+      maxWidth: '90vw',
+      paddingTop: '8rem'
     },
     [theme.breakpoints.down('xs')]: {
       maxWidth: '100vw'
@@ -17,8 +18,13 @@ const useStyles = makeStyles((theme) => ({
     padding: `0 1.0875rem 1.45rem`,    
   },
   header: {
-    background: `none`,
+    background: `#ffffff`,
     marginBottom: `1.45rem`,
+    [theme.breakpoints.down('sm')]: {
+      position: 'fixed',
+      top: 0,
+      zIndex: '10'
+    },
   },
   headerWrap: {
     margin: `0 auto`,

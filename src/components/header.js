@@ -16,22 +16,22 @@ const Header = ({ siteTitle }) => {
         <div className={headerWrap}>
           <Grid container direction='row' justify='flex-start' alignItems='flex-start' spacing={2}>
             
-              <Grid item lg={3} xs={12}>
+              <Grid item md={3} xs={12}>
                 <Link to="/">
                   <Typography variant={"h5"}>{siteTitle}</Typography>
                 </Link>
               </Grid>
-              <Grid item lg={3} xs={12}>
+              <Grid item md={3}>
                 <Link to="/photography">
                   <Typography variant={"h5"}>photography</Typography>  
                 </Link>            
               </Grid>
-              <Grid item lg={3} xs={12}>
+              <Grid item md={3}>
                 <Link to="/code">
                   <Typography variant={"h5"}>code</Typography>  
                 </Link>            
               </Grid>
-              <Grid item lg={3} xs={12}>
+              <Grid item md={3}>
                 <Link to="/contact">
                   <Typography variant={"h5"}>contact</Typography>  
                 </Link>            
