@@ -43,25 +43,25 @@ const ContactFormTut = () => {
           <Grid item lg={9} xs={12}>
             <FormControl fullWidth>
               <InputLabel htmlFor="name-input">What do you like to be called?</InputLabel>
-              <Input id="form-name" name="name" type="text" required aria-describedby="nameHelp" autoComplete/>
+              <Input id="form-name" name="name" type="text" required aria-describedby="nameHelp" autoComplete='true'/>
             </FormControl>              
           </Grid>
           <Grid item lg={9} xs={12}>
             <FormControl fullWidth>
               <InputLabel htmlFor="email-input">What's the best email to reach you on?</InputLabel>
-              <Input id="form-email" name="email" type="email" required aria-describedby="emailHelp" autoComplete/>
+              <Input id="form-email" name="email" type="email" required aria-describedby="emailHelp" autoComplete='true'/>
             </FormControl>              
           </Grid>          
           <Grid item lg={9} xs={12}>
             <FormControl fullWidth>
               <InputLabel htmlFor="pronouns-input">What are your pronouns?</InputLabel>
-              <Input id="form-pronouns" name="pronouns" type="text" required aria-describedby="pronounsHelp" autoComplete/>
+              <Input id="form-pronouns" name="pronouns" type="text" required aria-describedby="pronounsHelp" autoComplete='true'/>
             </FormControl>
           </Grid>  
           <Grid item lg={9} xs={12}>            
             <FormControl fullWidth>
               <InputLabel htmlFor="email-message">Tell me how I can help you:</InputLabel>
-              <Input id="form-message" name="message" type="text" multiline required aria-describedby="theMessage" autoComplete/>
+              <Input id="form-message" name="message" type="text" multiline required aria-describedby="theMessage" autoComplete='true'/>
             </FormControl>              
           </Grid>
           <Grid item lg={9} xs={12}>
