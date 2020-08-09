@@ -1,7 +1,7 @@
 import React, { useState }  from "react"
 import axios from "axios";
 // import Link from "../components/link"
-import { Grid, Button, FormControl, Input, InputLabel, Typography, FormGroup, FormControlLabel, Checkbox } from "@material-ui/core"
+import { Grid, Button, FormControl, Input, InputLabel, Typography } from "@material-ui/core"
 
 const ContactFormTut = () => {
     
@@ -34,18 +34,6 @@ const ContactFormTut = () => {
         handleServerResponse(false, r.response.data.error, form)
       })
   }
-  const [ pronouns, setPronouns ] = useState({
-    they: true,
-    she: false,
-    he: false
-  })
-
-  const handlePronounsChange = (event) => {
-    setPronouns({ ...pronouns, [event.target.name]: event.target.checked })
-  }
-
-  const { they, she, he } = pronouns
-  const error = [they, she, he].filter((v) => v).length !== 2
   
   return (
     <React.Fragment>
@@ -63,28 +51,11 @@ const ContactFormTut = () => {
               <InputLabel htmlFor="email-input">What's the best email to reach you on?</InputLabel>
               <Input id="form-email" name="email" type="email" required aria-describedby="emailHelp" autoComplete/>
             </FormControl>              
-          </Grid>
-          
-          <Grid item lg={9} xs={12}> 
-          <InputLabel component="legend">What are your pronouns?</InputLabel>
-
-            <FormControl component="fieldset" required error={error}>
-              <FormGroup>
-                <Grid container direction="row">
-                  <FormControlLabel
-                    control={<Checkbox onChange={handlePronounsChange} name="they" />}
-                    label="they/them"
-                  />
-                  <FormControlLabel
-                    control={<Checkbox onChange={handlePronounsChange} name="she" />}
-                    label="she/her"
-                  />
-                  <FormControlLabel
-                    control={<Checkbox onChange={handlePronounsChange} name="he" />}
-                    label="he/him"
-                  />
-                </Grid>
-              </FormGroup>
+          </Grid>          
+          <Grid item lg={9} xs={12}>
+            <FormControl fullWidth>
+              <InputLabel htmlFor="pronouns-input">What are your pronouns?</InputLabel>
+              <Input id="form-pronouns" name="pronouns" type="text" required aria-describedby="pronounsHelp" autoComplete/>
             </FormControl>
           </Grid>  
           <Grid item lg={9} xs={12}>            
