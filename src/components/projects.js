@@ -33,7 +33,7 @@ const Projects = () => {
   }
   `)
 
-  const { projectHero, projectHeroContainer } = useStyles()
+  const { projectHero, projectHeroContainer, projectBody } = useStyles()
 
   return (    
     <React.Fragment>
@@ -42,31 +42,31 @@ const Projects = () => {
         <Grid item md={6} xs={12} className={projectHeroContainer}>
           <Link to="https://whatshouldiread-cassidy.herokuapp.com/">
             <Img fluid={data.whatshouldireadprimary.childImageSharp.fluid} className={projectHero}/>
-            <Typography variant="h4">what should i read</Typography>
-            <Typography variant="body1">React, GraphQL, MongoDB</Typography>
+            <Typography variant="h4" className={projectBody}>what should i read</Typography>
+            <Typography variant="body1" className={projectBody}>React, GraphQL, MongoDB</Typography>
           </Link>
           <Link to="https://github.com/mxbialostocki/cassidy">
-            <Typography variant="h5">github</Typography>
+            <Typography variant="h5" className={projectBody}>github</Typography>
           </Link>
         </Grid>
         <Grid item md={6} xs={12} className={projectHeroContainer}>
           <Link to="https://scaffolding-xtw.herokuapp.com/">
             <Img fluid={data.scaffoldingprimary.childImageSharp.fluid} className={projectHero}/>
-            <Typography variant="h4">scaffolding</Typography>
-            <Typography variant="body1">React, Javascript, Poetry</Typography>
+            <Typography variant="h4" className={projectBody}>scaffolding</Typography>
+            <Typography variant="body1" className={projectBody}>React, Javascript, Poetry</Typography>
           </Link>
           <Link to="https://github.com/mxbialostocki/scaffolding">
-            <Typography variant="h5">github</Typography>
+            <Typography variant="h5" className={projectBody}>github</Typography>
           </Link>
         </Grid>
         <Grid item md={6} xs={12} className={projectHeroContainer}>
           <Link to="https://scaffolding-xtw.herokuapp.com/">
             <Img fluid={data.mxbialostocki.childImageSharp.fluid} className={projectHero}/>
-            <Typography variant="h4">this site</Typography>
-            <Typography variant="body1">Gatsby, React, Javascript</Typography>
+            <Typography variant="h4" className={projectBody}>this site</Typography>
+            <Typography variant="body1" className={projectBody}>Gatsby, React, Javascript</Typography>
           </Link>
           <Link to="https://github.com/mxbialostocki/scaffolding">
-            <Typography variant="h5">github</Typography>
+            <Typography variant="h5" className={projectBody}>github</Typography>
           </Link>
         </Grid>
 
