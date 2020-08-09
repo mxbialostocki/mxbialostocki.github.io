@@ -45,10 +45,6 @@ const PhotographyGallery = () => {
             <Img fluid={data.craft.childImageSharp.fluid} />
             <Typography variant="h5">craft</Typography>
           </Grid>
-          <Grid item lg={3} md={6} xs={12}>
-            <Img fluid={data.event.childImageSharp.fluid} />
-            <Typography variant="h5">event</Typography>
-          </Grid>
 
       </Grid>      
     </React.Fragment>

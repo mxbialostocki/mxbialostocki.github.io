@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => {
                 </Link>
               </Grid>
               <Grid item md={3}>
-                <Link to="/photography">
+                <Link to="/404">
                   <Typography variant={"h5"}>photography</Typography>  
                 </Link>            
               </Grid>
