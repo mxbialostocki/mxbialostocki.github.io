@@ -45,16 +45,10 @@ const PhotographyGallery = () => {
   `)
   return (
     <React.Fragment>
-      <Grid container direction='row' spacing={2} >
-        
-          <Grid item md={6} xs={12}>
-            <Img fluid={data.portrait1.childImageSharp.fluid} />
-          </Grid>
+      <Grid container direction='row' spacing={4} >        
+
           <Grid item md={6} xs={12}>
             <Img fluid={data.portrait4.childImageSharp.fluid} />
-          </Grid>
-          <Grid item md={6} xs={12}>
-            <Img fluid={data.portrait3.childImageSharp.fluid} />
           </Grid>
           <Grid item md={6} xs={12}>
             <Img fluid={data.portrait6.childImageSharp.fluid} />
