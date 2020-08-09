@@ -4,6 +4,7 @@ built with Gatsby from the [gatsby-starter-default](https://github.com/gatsbyjs/
 
 ### story
 I needed a new website that could demonstrate the creative content that my technical work entails. I wanted to show a couple of cool projects, but also run a rate card for my freelance photography with a few examples. I also needed the site to act as a CV and a visual connection to github and linkedIn.
+... but mostly, I wanted to test out some theories about Material-UI and Gatsby.
 
 ## Quick start
 You can play around with this structure by cloning down the repo and running first `npm install`, then `gatsby develop`.
