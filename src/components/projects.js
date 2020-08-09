@@ -33,13 +33,13 @@ const Projects = () => {
   }
   `)
 
-  const { projectHero } = useStyles()
+  const { projectHero, projectHeroContainer } = useStyles()
 
   return (    
     <React.Fragment>
       <Grid container direction='row' spacing={2} >
         
-        <Grid item md={6} xs={12}>
+        <Grid item md={6} xs={12} className={projectHeroContainer}>
           <Link to="https://whatshouldiread-cassidy.herokuapp.com/">
             <Img fluid={data.whatshouldireadprimary.childImageSharp.fluid} className={projectHero}/>
             <Typography variant="h4">what should i read</Typography>
@@ -49,7 +49,7 @@ const Projects = () => {
             <Typography variant="h5">github</Typography>
           </Link>
         </Grid>
-        <Grid item md={6} xs={12}>
+        <Grid item md={6} xs={12} className={projectHeroContainer}>
           <Link to="https://scaffolding-xtw.herokuapp.com/">
             <Img fluid={data.scaffoldingprimary.childImageSharp.fluid} className={projectHero}/>
             <Typography variant="h4">scaffolding</Typography>
@@ -59,7 +59,7 @@ const Projects = () => {
             <Typography variant="h5">github</Typography>
           </Link>
         </Grid>
-        <Grid item md={6} xs={12}>
+        <Grid item md={6} xs={12} className={projectHeroContainer}>
           <Link to="https://scaffolding-xtw.herokuapp.com/">
             <Img fluid={data.mxbialostocki.childImageSharp.fluid} className={projectHero}/>
             <Typography variant="h4">this site</Typography>
