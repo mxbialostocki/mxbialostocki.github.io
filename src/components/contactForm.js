@@ -28,7 +28,7 @@ const ContactFormTut = () => {
       data: new FormData(form)
     })
       .then(r => {
-        handleServerResponse(true, "Thanks!", form)
+        handleServerResponse(true, "Thanks! Look forward to hearing from me :)", form)
       })
       .catch(r => {
         handleServerResponse(false, r.response.data.error, form)
