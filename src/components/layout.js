@@ -35,8 +35,8 @@ const Layout = ({ children }) => {
         <Grid container item xs={12} alignContent='flex-end'>
 
           <footer>          
-            <Typography variant='body1'>
-              © {new Date().getFullYear()}, Built with{` `}<Link to="https://www.gatsbyjs.org">Gatsby</Link>
+            <Typography variant='body2'>
+              © {new Date().getFullYear()}, Built by{` `}<Link to='/'>mxbialostocki</Link> with{` `}<Link to="https://www.gatsbyjs.org">Gatsby</Link>
             </Typography>          
           </footer>
           
