@@ -22,8 +22,9 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: `1.45rem`,
     [theme.breakpoints.down('sm')]: {
       position: 'fixed',
-      top: 0,
-      zIndex: '10'
+      top: '0',
+      zIndex: '10',
+      width: '100%'
     },
   },
   headerWrap: {
@@ -38,7 +39,10 @@ const useStyles = makeStyles((theme) => ({
   },
   projectHero: {
     boxShadow: '5px 5px 10px grey',
-    margin: '2rem 0',
+    margin: '2rem .5rem',
+  },
+  projectBody: {
+    margin: '0 .5rem'
   }
 }));
 
