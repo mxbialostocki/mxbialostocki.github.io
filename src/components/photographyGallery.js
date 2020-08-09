@@ -6,21 +6,35 @@ import { Grid, Typography } from '@material-ui/core'
 const PhotographyGallery = () => {
   const data = useStaticQuery(graphql`
     query {
-      portrait: file(relativePath: { eq: "mxbialostocki191126-sgts04-1129.jpg" }) {
+      portrait1: file(relativePath: { eq: "portrait5.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 900, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      craft: file(relativePath: { eq: "mxbialostocki191126-sgts04-1270.jpg" }) {
+      portrait2: file(relativePath: { eq: "portrait2.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 900, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      event: file(relativePath: { eq: "mxbialostocki191126-sgts04-1891.jpg" }) {
+      portrait3: file(relativePath: { eq: "portrait3.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 900, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      portrait4: file(relativePath: { eq: "portrait4.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 900, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      portrait6: file(relativePath: { eq: "portrait6.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 900, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -33,17 +47,17 @@ const PhotographyGallery = () => {
     <React.Fragment>
       <Grid container direction='row' spacing={4} >
         
-          <Grid item lg={3} md={6} xs={12}>
-            <Img fluid={data.portrait.childImageSharp.fluid} />
-            <Typography variant="h5">portrait</Typography>
+          <Grid item md={6} xs={12}>
+            <Img fluid={data.portrait1.childImageSharp.fluid} />
           </Grid>
-          <Grid item lg={3} md={6} xs={12}>
-            <Img fluid={data.event.childImageSharp.fluid} />
-            <Typography variant="h5">event</Typography>
+          <Grid item md={6} xs={12}>
+            <Img fluid={data.portrait4.childImageSharp.fluid} />
           </Grid>
-          <Grid item lg={3} md={6} xs={12}>
-            <Img fluid={data.craft.childImageSharp.fluid} />
-            <Typography variant="h5">craft</Typography>
+          <Grid item md={6} xs={12}>
+            <Img fluid={data.portrait3.childImageSharp.fluid} />
+          </Grid>
+          <Grid item md={6} xs={12}>
+            <Img fluid={data.portrait6.childImageSharp.fluid} />
           </Grid>
 
       </Grid>      

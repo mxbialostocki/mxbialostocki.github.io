@@ -4,6 +4,7 @@ import { Grid, Typography } from '@material-ui/core'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PhotographyGallery from "../components/photographyGallery"
+import Link from "../components/link"
 
 const Photography = () => (
   <React.Fragment>
@@ -13,17 +14,13 @@ const Photography = () => (
         
         <Grid item>
           <Typography variant="body1">
-            Some things I say about photography: Look at all these things I say
+            I apply a developed, personal method to my portraiture and offer event photography at fair prices. <Link to='/contact'>Contact me</Link> to start a conversation about your needs or book in a session.
           </Typography>
         </Grid>
 
       </Grid>
       <PhotographyGallery />
-      <Grid container direction='row' spacing={4} >
-        <Grid item lg={12}>
-          <Typography variant='h2'>`rate card`</Typography>
-        </Grid>
-      </Grid>
+      
     </Layout>
   </React.Fragment>
 )
