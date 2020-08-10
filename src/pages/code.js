@@ -7,6 +7,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Projects from '../components/projects'
 
+import useStyles from '../../plugins/custom-mui-theme/theme/custom'
+
 const Code = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -61,6 +63,8 @@ const Code = () => {
       }
     }
   `)
+
+  const { stack } = useStyles()
   return (
     <Layout>
       <SEO title="code" />
@@ -72,30 +76,30 @@ const Code = () => {
             I'm a full-stack dev with a current focus on web development. A few projects I've worked on lately are below. I'm always open to new challenges, so please get in touch with me if you'd like to work together.
           </Typography>
         </Grid>
-        
+
       </Grid>
       <Grid container direction='row' justify="center" spacing={6}>
 
-        <Grid item xs={1}>
-          <Img fluid={data.react.childImageSharp.fluid} />
+        <Grid item xs={1} >
+          <Img fluid={data.react.childImageSharp.fluid} className={stack}/>
         </Grid>
         <Grid item xs={1}>
-          <Img fluid={data.graphqlicon.childImageSharp.fluid} />
+          <Img fluid={data.graphqlicon.childImageSharp.fluid} className={stack}/>
         </Grid>
         <Grid item xs={1}>
-          <Img fluid={data.nodejs.childImageSharp.fluid} />
+          <Img fluid={data.nodejs.childImageSharp.fluid} className={stack}/>
         </Grid>
         <Grid item xs={1}>
-          <Img fluid={data.gatsby.childImageSharp.fluid} />
+          <Img fluid={data.gatsby.childImageSharp.fluid} className={stack}/>
         </Grid>
         <Grid item xs={1}>
-          <Img fluid={data.materialui.childImageSharp.fluid} />
+          <Img fluid={data.materialui.childImageSharp.fluid} className={stack}/>
         </Grid>
         <Grid item xs={1}>
-          <Img fluid={data.mongodb.childImageSharp.fluid} />
+          <Img fluid={data.mongodb.childImageSharp.fluid} className={stack}/>
         </Grid>
         <Grid item xs={1}>
-          <Img fluid={data.github.childImageSharp.fluid} />
+          <Img fluid={data.github.childImageSharp.fluid} className={stack}/>
         </Grid>
 
       </Grid>

@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
   headerContainer: {
     height: '1rem',
-    borderBottom: 'solid #f50057 .5px'
+    borderBottom: 'solid #f50057 1px'
   },
   projectHeroContainer: {
     maxWidth: '100%',
@@ -46,6 +46,12 @@ const useStyles = makeStyles((theme) => ({
   projectHero: {
     boxShadow: '5px 5px 10px grey',
     margin: '2rem 0',
+  },
+  stack: {
+    transition: 'all .2s ease-in-out',
+    '&:hover': {
+      transform: 'scale(2)'
+    }
   },
 }));
 
