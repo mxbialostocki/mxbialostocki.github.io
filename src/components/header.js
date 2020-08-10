@@ -8,13 +8,13 @@ import useStyles from "../../plugins/custom-mui-theme/theme/custom"
 
 const Header = ({ siteTitle }) => {
 
-  const { header, headerWrap } = useStyles()
+  const { header, headerWrap, headerContainer } = useStyles()
 
   return (
     <React.Fragment>
       <header className={header}>
         <div className={headerWrap}>
-          <Grid container direction='row' justify='flex-start' alignItems='flex-start' spacing={2}>
+          <Grid container direction='row' justify='flex-start' alignItems='flex-start' spacing={1} >
             
               <Grid item md={3} xs={12}>
                 <Link to="/">
@@ -38,6 +38,7 @@ const Header = ({ siteTitle }) => {
               </Grid>
 
           </Grid>
+          <div className={headerContainer}></div>
         </div>
       </header>
     </React.Fragment>

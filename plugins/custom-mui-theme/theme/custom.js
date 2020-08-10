@@ -9,27 +9,33 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '70vw',
     [theme.breakpoints.down('sm')]: {
       maxWidth: '90vw',
-      paddingTop: '8rem'
     },
     [theme.breakpoints.down('xs')]: {
       maxWidth: '100vw'
     },
     height: '100vh',
-    padding: `0 1.0875rem 1.45rem`,    
+    padding: `9rem 1.0875rem 1.45rem`,    
   },
   header: {
     background: `#ffffff`,
-    marginBottom: `1.45rem`,
-    [theme.breakpoints.down('sm')]: {
-      position: 'fixed',
-      top: '0',
-      zIndex: '10',
-      width: '100%'
-    },
+    position: 'fixed',
+    top: '0',
+    zIndex: '10',
+    width: '100vw',    
   },
   headerWrap: {
     margin: `0 auto`,
-    padding: `1rem 0`,
+    padding: `1rem 1rem 0 1rem`,
+    maxWidth: '70vw',
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: '90vw',
+    },
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: '100vw'
+    },
+  },
+  headerContainer: {
+    height: '1rem',
     borderBottom: 'solid #f50057 .5px'
   },
   projectHeroContainer: {
@@ -39,11 +45,8 @@ const useStyles = makeStyles((theme) => ({
   },
   projectHero: {
     boxShadow: '5px 5px 10px grey',
-    margin: '2rem .5rem',
+    margin: '2rem 0',
   },
-  projectBody: {
-    margin: '0 .5rem'
-  }
 }));
 
 export default useStyles

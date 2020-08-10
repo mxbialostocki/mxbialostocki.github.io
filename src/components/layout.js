@@ -6,7 +6,7 @@ import { Grid, Typography, Link } from '@material-ui/core'
 import Header from "./header"
 
 import "./layout.css"
-import useStyle from "../../plugins/custom-mui-theme/theme/custom"
+import useStyles from "../../plugins/custom-mui-theme/theme/custom"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -19,14 +19,15 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const styles = useStyle()
+  const styles = useStyles()
 
   return (
     <React.Fragment>
+      <Header siteTitle={data.site.siteMetadata.title} />
       <Grid container direction="row" justify="space-between" className={styles.layout}>
 
         <Grid item xs={12}>
-          <Header siteTitle={data.site.siteMetadata.title} />
+          
         </Grid>
         <Grid item xs={12}>
           <main>{children}</main>
