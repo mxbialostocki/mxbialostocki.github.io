@@ -37,7 +37,7 @@ const Projects = () => {
 
   return (    
     <React.Fragment>
-      <Grid container direction='row' spacing={2} >
+      <Grid container direction='row' spacing={6} >
         
         <Grid item md={6} xs={12} className={projectHeroContainer}>
           <Link to="https://whatshouldiread-cassidy.herokuapp.com/">
