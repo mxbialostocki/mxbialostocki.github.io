@@ -66,51 +66,53 @@ const Code = () => {
 
   const { stack } = useStyles()
   return (
-    <Layout>
-      <SEO title="code" />
-      
-      <Grid container direction="row" spacing={4}>
+    <React.Fragment>
+      <Layout>
+        <SEO title="code" />
+        
+        <Grid container direction="row" spacing={4}>
 
-        <Grid item md={11}>
-          <Typography variant="h5">
-            I'm a full-stack dev with a current focus on web development. A few projects I've worked on lately are below. I'm always open to new challenges, so please get in touch with me if you'd like to work together.
-          </Typography>
-        </Grid>
+          <Grid item md={11}>
+            <Typography variant="h5">
+              I'm a full-stack dev with a current focus on web development. A few projects I've worked on lately are below. I'm always open to new challenges, so please get in touch with me if you'd like to work together.
+            </Typography>
+          </Grid>
 
-      </Grid>
-      <Grid container direction='row' justify="center" alignItems="center" spacing={6} style={{ padding: '1rem 0'}}>
+        </Grid>
+        <Grid container direction='row' justify="center" alignItems="center" spacing={6} style={{ padding: '1rem 0'}}>
 
-        <Grid item xs={1} >
-          <Img fluid={data.react.childImageSharp.fluid} className={stack}/>
-        </Grid>
-        <Grid item xs={1}>
-          <Img fluid={data.graphqlicon.childImageSharp.fluid} className={stack}/>
-        </Grid>
-        <Grid item xs={1}>
-          <Img fluid={data.nodejs.childImageSharp.fluid} className={stack}/>
-        </Grid>
-        <Grid item xs={1}>
-          <Img fluid={data.gatsby.childImageSharp.fluid} className={stack}/>
-        </Grid>
-        <Grid item xs={1}>
-          <Img fluid={data.materialui.childImageSharp.fluid} className={stack}/>
-        </Grid>
-        <Grid item xs={1}>
-          <Img fluid={data.mongodb.childImageSharp.fluid} className={stack}/>
-        </Grid>
-        <Grid item xs={1}>
-          <Img fluid={data.github.childImageSharp.fluid} className={stack}/>
-        </Grid>
+          <Grid item xs={1} >
+            <Img fluid={data.react.childImageSharp.fluid} className={stack}/>
+          </Grid>
+          <Grid item xs={1}>
+            <Img fluid={data.graphqlicon.childImageSharp.fluid} className={stack}/>
+          </Grid>
+          <Grid item xs={1}>
+            <Img fluid={data.nodejs.childImageSharp.fluid} className={stack}/>
+          </Grid>
+          <Grid item xs={1}>
+            <Img fluid={data.gatsby.childImageSharp.fluid} className={stack}/>
+          </Grid>
+          <Grid item xs={1}>
+            <Img fluid={data.materialui.childImageSharp.fluid} className={stack}/>
+          </Grid>
+          <Grid item xs={1}>
+            <Img fluid={data.mongodb.childImageSharp.fluid} className={stack}/>
+          </Grid>
+          <Grid item xs={1}>
+            <Img fluid={data.github.childImageSharp.fluid} className={stack}/>
+          </Grid>
 
-      </Grid>
-      <Grid container direction='row' spacing={4}>
-      
-      <Grid item sm={12}>
-        <Projects />
-      </Grid>
+        </Grid>
+        <Grid container direction='row' spacing={4}>
+        
+          <Grid item sm={12}>
+            <Projects />
+          </Grid>
 
-      </Grid>       
-    </Layout>
+        </Grid>       
+      </Layout>
+    </React.Fragment>
   )
 }
 
