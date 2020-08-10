@@ -21,17 +21,17 @@ const Header = ({ siteTitle }) => {
                   <Typography variant={"h5"}>{siteTitle}</Typography>
                 </Link>
               </Grid>
-              <Grid item md={3}>
+              <Grid item md={3} xs={5}>
                 <Link to="/photography">
                   <Typography variant={"h5"}>photography</Typography>  
                 </Link>            
               </Grid>
-              <Grid item md={3}>
+              <Grid item md={3} xs={3}>
                 <Link to="/code">
                   <Typography variant={"h5"}>code</Typography>  
                 </Link>            
               </Grid>
-              <Grid item md={3}>
+              <Grid item md={3} xs={4}>
                 <Link to="/contact">
                   <Typography variant={"h5"}>contact</Typography>  
                 </Link>            
