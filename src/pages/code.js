@@ -12,21 +12,21 @@ import useStyles from '../../plugins/custom-mui-theme/theme/custom'
 const Code = () => {
   const data = useStaticQuery(graphql`
     query {
-      react: file(relativePath: { eq: "stack-icon-react.jpg" }) {
+      react: file(relativePath: { eq: "icon-react.png" }) {
         childImageSharp {
           fluid(maxWidth: 150, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      graphqlicon: file(relativePath: { eq: "stack-icon-graphql.jpg" }) {
+      graphqlicon: file(relativePath: { eq: "icon-graphql.png" }) {
         childImageSharp {
           fluid(maxWidth: 150, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      nodejs: file(relativePath: { eq: "stack-icon-nodejs.jpg" }) {
+      nodejs: file(relativePath: { eq: "icon-nodejs.png" }) {
         childImageSharp {
           fluid(maxWidth: 150, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -40,21 +40,21 @@ const Code = () => {
           }
         }
       }
-      materialui: file(relativePath: { eq: "stack-icon-material-ui.jpg" }) {
+      materialui: file(relativePath: { eq: "icon-materialui.png" }) {
         childImageSharp {
           fluid(maxWidth: 150, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      mongodb: file(relativePath: { eq: "stack-icon-mongodb.jpg" }) {
+      mongodb: file(relativePath: { eq: "icon-mongodb.png" }) {
         childImageSharp {
           fluid(maxWidth: 150, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      github: file(relativePath: { eq: "stack-icon-github.jpg" }) {
+      github: file(relativePath: { eq: "icon-github.png" }) {
         childImageSharp {
           fluid(maxWidth: 150, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -78,7 +78,7 @@ const Code = () => {
         </Grid>
 
       </Grid>
-      <Grid container direction='row' justify="center" spacing={6}>
+      <Grid container direction='row' justify="center" alignItems="center" spacing={6} style={{ padding: '1rem 0'}}>
 
         <Grid item xs={1} >
           <Img fluid={data.react.childImageSharp.fluid} className={stack}/>
