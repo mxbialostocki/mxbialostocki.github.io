@@ -7,7 +7,7 @@ import useStyles from "../../plugins/custom-mui-theme/theme/custom"
 
 const Footer = () => {
 
-  const { footer, footerWrap } = useStyles()
+  const { footer, footerWrap, primary } = useStyles()
 
   return (
     <React.Fragment>
@@ -17,7 +17,7 @@ const Footer = () => {
             
               <Grid item md={12} xs={12}>
                 <Typography variant='body2'>
-                  © {new Date().getFullYear()}, Built by{` `}<Link to='/'>mxbialostocki</Link> with{` `}<Link to="https://www.gatsbyjs.org">Gatsby</Link>
+                  © {new Date().getFullYear()}, Built by{` `}<Link to='/'><span  className={primary}>mxbialostocki</span></Link> with{` `}<Link to="https://www.gatsbyjs.org">Gatsby</Link>
                 </Typography>          
               </Grid>
 

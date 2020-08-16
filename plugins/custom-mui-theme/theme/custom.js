@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: '100vw'
     },
     minHeight: '100vh',
-    padding: `9rem 1.0875rem 0 1.45rem`,    
+    padding: `9rem 1.0875rem 0 1.0875rem`,    
   },
   header: {
     background: `#ffffff`,
