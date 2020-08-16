@@ -13,8 +13,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('xs')]: {
       maxWidth: '100vw'
     },
-    height: '100vh',
-    padding: `9rem 1.0875rem 1.45rem`,    
+    minHeight: '100vh',
+    padding: `9rem 1.0875rem 0 1.45rem`,    
   },
   header: {
     background: `#ffffff`,
@@ -26,6 +26,24 @@ const useStyles = makeStyles((theme) => ({
   headerWrap: {
     margin: `0 auto`,
     padding: `1rem 1rem 0 1rem`,
+    maxWidth: '70vw',
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: '90vw',
+    },
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: '100vw'
+    },
+  },
+  footer: {
+    background: `#ffffff`,
+    position: 'fixed',
+    bottom: '0rem',
+    zIndex: '10',
+    width: '100vw',    
+  },
+  footerWrap: {
+    margin: `0 auto`,
+    padding: `1rem 1rem 1rem 1rem`,
     maxWidth: '70vw',
     [theme.breakpoints.down('sm')]: {
       maxWidth: '90vw',
