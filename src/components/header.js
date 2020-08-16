@@ -8,32 +8,32 @@ import useStyles from "../../plugins/custom-mui-theme/theme/custom"
 
 const Header = ({ siteTitle }) => {
 
-  const { header, headerWrap, headerContainer } = useStyles()
+  const { header, headerWrap, lastChild, headerContainer } = useStyles()
 
   return (
     <React.Fragment>
       <header className={header}>
         <div className={headerWrap}>
-          <Grid container direction='row' justify='flex-start' alignItems='flex-start' spacing={1} >
+          <Grid container direction='row' justify='flex-start' spacing={1} >
             
-              <Grid item md={3} xs={12}>
+              <Grid item xl={3} md={3} xs={12}>
                 <Link to="/">
                   <Typography variant={"h5"}>{siteTitle}</Typography>
                 </Link>
               </Grid>
-              <Grid item md={3} xs={5}>
+              <Grid item xl={3} md={3} xs={5}>
                 <Link to="/photography">
                   <Typography variant={"h5"}>photography</Typography>  
                 </Link>            
               </Grid>
-              <Grid item md={3} xs={3}>
+              <Grid item xl={2} md={3} xs={3}>
                 <Link to="/code">
                   <Typography variant={"h5"}>code</Typography>  
                 </Link>            
               </Grid>
-              <Grid item md={3} xs={4}>
+              <Grid item xl={4} md={3} xs={4}>
                 <Link to="/contact">
-                  <Typography variant={"h5"}>contact</Typography>  
+                  <Typography variant={"h5"} className={lastChild}>contact</Typography>  
                 </Link>            
               </Grid>
 

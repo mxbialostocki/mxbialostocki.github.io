@@ -21,7 +21,12 @@ const useStyles = makeStyles((theme) => ({
     position: 'fixed',
     top: '0',
     zIndex: '10',
-    width: '100vw',    
+    width: '100vw',
+  },
+  lastChild: {
+    [theme.breakpoints.up('md')]: {
+      textAlign: 'right'
+    }
   },
   headerWrap: {
     margin: `0 auto`,
@@ -32,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('xs')]: {
       maxWidth: '100vw'
-    },
+    }
   },
   footer: {
     background: `#ffffff`,
