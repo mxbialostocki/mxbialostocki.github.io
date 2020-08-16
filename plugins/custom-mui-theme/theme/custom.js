@@ -59,7 +59,10 @@ const useStyles = makeStyles((theme) => ({
   projectHeroContainer: {
     maxWidth: '100%',
     padding: '.5rem',
-    marginBottom: '.5rem'
+    marginBottom: '.5rem',
+    [theme.breakpoints.down('md')]: {
+      padding: '0 .5rem'
+    }
   },
   projectHero: {
     boxShadow: '5px 5px 10px grey',

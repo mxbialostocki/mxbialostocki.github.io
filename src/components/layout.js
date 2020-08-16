@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Grid container direction="row" justify="space-between" className={layout}>
+      <Grid container direction="row" justify="space-around" className={layout}>
 
       <Grid item xs={12}>
         </Grid>
