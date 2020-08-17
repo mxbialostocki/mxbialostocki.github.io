@@ -14,7 +14,10 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: '100vw'
     },
     minHeight: '100vh',
-    padding: `9rem 1.0875rem 0 1.0875rem`,    
+    padding: `9rem 1.0875rem 0 1.0875rem`,
+    [theme.breakpoints.down('sm')]: {
+      padding: `9rem 1.0875rem 4rem 1.0875rem`, 
+    }    
   },
   header: {
     background: `#ffffff`,
