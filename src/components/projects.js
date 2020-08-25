@@ -37,7 +37,7 @@ const Projects = () => {
 
   return (    
     <React.Fragment>
-      <Grid container direction='row' spacing={2} >
+      <Grid container direction='row' spacing={4} >
         
         <Grid item md={6} xs={12} className={projectHeroContainer}>
           <Link to="https://whatshouldiread-cassidy.herokuapp.com/">
@@ -60,12 +60,12 @@ const Projects = () => {
           </Link>
         </Grid>
         <Grid item md={6} xs={12} className={projectHeroContainer}>
-          <Link to="https://scaffolding-xtw.herokuapp.com/">
+          <Link to="/">
             <Img fluid={data.mxbialostocki.childImageSharp.fluid} className={projectHero}/>
             <Typography variant="h4" >this site</Typography>
             <Typography variant="body1" >Gatsby, Material-UI, React</Typography>
           </Link>
-          <Link to="https://github.com/mxbialostocki/scaffolding">
+          <Link to="https://github.com/mxbialostocki/mxbialostocki.github.io">
             <Typography variant="body1" >github</Typography>
           </Link>
         </Grid>
