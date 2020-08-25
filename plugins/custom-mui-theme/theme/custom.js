@@ -43,9 +43,11 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   link: {
-    transition: 'all .2s ease-in-out',
-    '&:hover': {
-      transform: 'scale(1.1)'
+    [theme.breakpoints.up('md')]: {
+      transition: 'all .2s ease-in-out',
+      '&:hover': {
+        transform: 'scale(1.1)'
+      }
     }
   },
   footer: {
