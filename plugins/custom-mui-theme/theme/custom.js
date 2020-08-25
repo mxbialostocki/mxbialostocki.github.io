@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     minHeight: '100vh',
     padding: `9rem 1.0875rem 6rem 1.0875rem`,
     [theme.breakpoints.down('sm')]: {
-      padding: `9rem 1.0875rem 0 1.0875rem`, 
+      padding: `9rem 1.0875rem 9rem 1.0875rem`, 
     }    
   },
   header: {
@@ -40,6 +40,12 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('xs')]: {
       maxWidth: '100vw'
+    }
+  },
+  link: {
+    transition: 'all .2s ease-in-out',
+    '&:hover': {
+      transform: 'scale(1.1)'
     }
   },
   footer: {

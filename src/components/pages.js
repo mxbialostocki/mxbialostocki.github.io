@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Link from './link'
 import { Grid, Typography } from '@material-ui/core'
 import Img from "gatsby-image"
+import useStyles from '../../plugins/custom-mui-theme/theme/custom'
 
 const Pages = () => {
   const data = useStaticQuery(graphql`
@@ -30,24 +31,25 @@ const Pages = () => {
       }
     }
   `)
+  const { link } = useStyles()
 
   return (    
     <React.Fragment>
       <Grid container direction='row' spacing={4} >
         
-          <Grid item lg={4} md={6} xs={12}>
+          <Grid item lg={4} md={6} xs={12} className={link}>
             <Link to="/code">
               <Img fluid={data.code.childImageSharp.fluid} />
               <Typography variant="h5">code</Typography>
             </Link>
           </Grid>
-          <Grid item lg={4} md={6} xs={12}>
+          <Grid item lg={4} md={6} xs={12} className={link}>
             <Link to="/photography">
               <Img fluid={data.photography.childImageSharp.fluid} />
               <Typography variant="h5">photography</Typography>
             </Link>
           </Grid>
-          <Grid item lg={4} md={12} xs={12}>
+          <Grid item lg={4} md={12} xs={12} className={link}>
             <Link to="https://www.mypronouns.org/they-them">
               <Img fluid={data.pronouns.childImageSharp.fluid} />
               <Typography variant="h5">pronouns</Typography>
