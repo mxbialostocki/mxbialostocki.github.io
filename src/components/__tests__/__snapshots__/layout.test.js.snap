@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders correctly 1`] = `
+<React.Fragment>
+  <Header
+    siteTitle="Mock Title"
+  />
+  <WithStyles(ForwardRef(Grid))
+    className="makeStyles-layout-2"
+    container={true}
+    direction="row"
+    justify="space-between"
+  >
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    />
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    >
+      <main>
+        children
+      </main>
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    />
+  </WithStyles(ForwardRef(Grid))>
+  <Footer />
+</React.Fragment>
+`;
+
+exports[`layout Renders correctly 1`] = `
+<React.Fragment>
+  <Header
+    siteTitle="Mock Title"
+  />
+  <WithStyles(ForwardRef(Grid))
+    className="makeStyles-layout-2"
+    container={true}
+    direction="row"
+    justify="space-between"
+  >
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    />
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    >
+      <main>
+        children
+      </main>
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    />
+  </WithStyles(ForwardRef(Grid))>
+  <Footer />
+</React.Fragment>
+`;
+
+exports[`layout renders correctly 1`] = `
+<React.Fragment>
+  <Header
+    siteTitle="Mock Title"
+  />
+  <WithStyles(ForwardRef(Grid))
+    className="makeStyles-layout-2"
+    container={true}
+    direction="row"
+    justify="space-between"
+  >
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    />
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    >
+      <main>
+        children
+      </main>
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    />
+  </WithStyles(ForwardRef(Grid))>
+  <Footer />
+</React.Fragment>
+`;
+
+exports[`layout renders footer 1`] = `
+<React.Fragment>
+  <Header
+    siteTitle="Mock Title"
+  />
+  <WithStyles(ForwardRef(Grid))
+    className="makeStyles-layout-2"
+    container={true}
+    direction="row"
+    justify="space-between"
+  >
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    />
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    >
+      <main>
+        children
+      </main>
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    />
+  </WithStyles(ForwardRef(Grid))>
+  <Footer />
+</React.Fragment>
+`;

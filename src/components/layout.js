@@ -19,6 +19,9 @@ const Layout = ({ children }) => {
       }
     }
   `)
+  // Jest testing cls
+  // console.log(data)
+  // console.log(useStaticQuery)
 
   const { layout } = useStyles()
 

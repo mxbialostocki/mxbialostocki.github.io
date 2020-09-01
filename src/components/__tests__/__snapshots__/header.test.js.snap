@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`layout Renders correctly 1`] = `
+<header
+  className="makeStyles-header-3"
+>
+  <div
+    className="makeStyles-headerWrap-5"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-3 MuiGrid-grid-xl-3"
+      >
+        <a
+          href="/"
+        >
+          <h5
+            className="MuiTypography-root MuiTypography-h5"
+          >
+            mxbialostocki
+          </h5>
+        </a>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 MuiGrid-grid-md-3 MuiGrid-grid-xl-3"
+      >
+        <a
+          href="/photography"
+        >
+          <h5
+            className="MuiTypography-root MuiTypography-h5"
+          >
+            photography
+          </h5>
+        </a>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-md-3 MuiGrid-grid-xl-2"
+      >
+        <a
+          href="/code"
+        >
+          <h5
+            className="MuiTypography-root MuiTypography-h5"
+          >
+            code
+          </h5>
+        </a>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 MuiGrid-grid-xl-4"
+      >
+        <a
+          href="/contact"
+        >
+          <h5
+            className="MuiTypography-root makeStyles-lastChild-4 MuiTypography-h5"
+          >
+            contact
+          </h5>
+        </a>
+      </div>
+    </div>
+    <div
+      className="makeStyles-headerContainer-9"
+    />
+  </div>
+</header>
+`;
