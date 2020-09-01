@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index Page renders correctly 1`] = `
+<React.Fragment>
+  <Layout>
+    <SEO
+      description=""
+      lang="en"
+      meta={Array []}
+      title="Home"
+    />
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      direction="column"
+      spacing={4}
+    >
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+      >
+        <WithStyles(ForwardRef(Typography))
+          style={
+            Object {
+              "paddingBottom": "1rem",
+            }
+          }
+          variant="h2"
+        >
+          hello, Creature
+        </WithStyles(ForwardRef(Typography))>
+        <WithStyles(ForwardRef(Typography))
+          variant="h5"
+        >
+          My name is Bam.
+        </WithStyles(ForwardRef(Typography))>
+        <WithStyles(ForwardRef(Typography))
+          className="makeStyles-primary-1"
+          variant="h5"
+        >
+          I am the dev you're looking for.
+        </WithStyles(ForwardRef(Typography))>
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+    <Pages />
+  </Layout>
+</React.Fragment>
+`;
