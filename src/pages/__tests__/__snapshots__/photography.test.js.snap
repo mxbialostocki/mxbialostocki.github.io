@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Photography Page renders correctly 1`] = `
+<React.Fragment>
+  <Layout>
+    <SEO
+      description=""
+      lang="en"
+      meta={Array []}
+      title="Photography"
+    />
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      direction="column"
+      spacing={4}
+    >
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+      >
+        <WithStyles(ForwardRef(Typography))
+          variant="h5"
+        >
+          I apply a developed, personal method to my portraiture and offer event photography at fair prices. 
+          <Link
+            to="/contact"
+          >
+            <span
+              className="makeStyles-primary-1"
+            >
+              Contact me
+            </span>
+          </Link>
+           to start a conversation about your needs or book in a session.
+        </WithStyles(ForwardRef(Typography))>
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+    <PhotographyGallery />
+  </Layout>
+</React.Fragment>
+`;
