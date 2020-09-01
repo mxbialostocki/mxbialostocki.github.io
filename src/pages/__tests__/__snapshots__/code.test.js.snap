@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Code Page renders correctly 1`] = `
+<React.Fragment>
+  <Layout>
+    <SEO
+      description=""
+      lang="en"
+      meta={Array []}
+      title="code"
+    />
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      direction="row"
+      spacing={4}
+    >
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        md={11}
+      >
+        <WithStyles(ForwardRef(Typography))
+          variant="h5"
+        >
+          I'm a full-stack dev with a current focus on web development. A few projects I've worked on lately are below. I'm always open to new challenges, so please get in touch with me if you'd like to work together.
+        </WithStyles(ForwardRef(Typography))>
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+    <Hidden
+      only={
+        Array [
+          "xs",
+          "sm",
+          "md",
+        ]
+      }
+    >
+      <WithStyles(ForwardRef(Grid))
+        alignItems="center"
+        container={true}
+        direction="row"
+        justify="center"
+        spacing={6}
+        style={
+          Object {
+            "padding": "1rem 0",
+          }
+        }
+      >
+        <WithStyles(ForwardRef(Grid))
+          item={true}
+          xs={1}
+        >
+          <Image
+            Tag="div"
+            alt=""
+            className="makeStyles-stack-12"
+            durationFadeIn={500}
+            fadeIn={true}
+            fluid={
+              Object {
+                "aspectRatio": "aspectRatio",
+                "base64": "base64",
+                "sizes": "sizes",
+                "src": "src",
+                "srcSet": "srcSet",
+              }
+            }
+            loading="lazy"
+          />
+        </WithStyles(ForwardRef(Grid))>
+        <WithStyles(ForwardRef(Grid))
+          item={true}
+          xs={1}
+        >
+          <Image
+            Tag="div"
+            alt=""
+            className="makeStyles-stack-12"
+            durationFadeIn={500}
+            fadeIn={true}
+            fluid={
+              Object {
+                "aspectRatio": "aspectRatio",
+                "base64": "base64",
+                "sizes": "sizes",
+                "src": "src",
+                "srcSet": "srcSet",
+              }
+            }
+            loading="lazy"
+          />
+        </WithStyles(ForwardRef(Grid))>
+        <WithStyles(ForwardRef(Grid))
+          item={true}
+          xs={1}
+        >
+          <Image
+            Tag="div"
+            alt=""
+            className="makeStyles-stack-12"
+            durationFadeIn={500}
+            fadeIn={true}
+            fluid={
+              Object {
+                "aspectRatio": "aspectRatio",
+                "base64": "base64",
+                "sizes": "sizes",
+                "src": "src",
+                "srcSet": "srcSet",
+              }
+            }
+            loading="lazy"
+          />
+        </WithStyles(ForwardRef(Grid))>
+        <WithStyles(ForwardRef(Grid))
+          item={true}
+          xs={1}
+        >
+          <Image
+            Tag="div"
+            alt=""
+            className="makeStyles-stack-12"
+            durationFadeIn={500}
+            fadeIn={true}
+            fluid={
+              Object {
+                "aspectRatio": "aspectRatio",
+                "base64": "base64",
+                "sizes": "sizes",
+                "src": "src",
+                "srcSet": "srcSet",
+              }
+            }
+            loading="lazy"
+          />
+        </WithStyles(ForwardRef(Grid))>
+        <WithStyles(ForwardRef(Grid))
+          item={true}
+          xs={1}
+        >
+          <Image
+            Tag="div"
+            alt=""
+            className="makeStyles-stack-12"
+            durationFadeIn={500}
+            fadeIn={true}
+            fluid={
+              Object {
+                "aspectRatio": "aspectRatio",
+                "base64": "base64",
+                "sizes": "sizes",
+                "src": "src",
+                "srcSet": "srcSet",
+              }
+            }
+            loading="lazy"
+          />
+        </WithStyles(ForwardRef(Grid))>
+        <WithStyles(ForwardRef(Grid))
+          item={true}
+          xs={1}
+        >
+          <Image
+            Tag="div"
+            alt=""
+            className="makeStyles-stack-12"
+            durationFadeIn={500}
+            fadeIn={true}
+            fluid={
+              Object {
+                "aspectRatio": "aspectRatio",
+                "base64": "base64",
+                "sizes": "sizes",
+                "src": "src",
+                "srcSet": "srcSet",
+              }
+            }
+            loading="lazy"
+          />
+        </WithStyles(ForwardRef(Grid))>
+        <WithStyles(ForwardRef(Grid))
+          item={true}
+          xs={1}
+        >
+          <Image
+            Tag="div"
+            alt=""
+            className="makeStyles-stack-12"
+            durationFadeIn={500}
+            fadeIn={true}
+            fluid={
+              Object {
+                "aspectRatio": "aspectRatio",
+                "base64": "base64",
+                "sizes": "sizes",
+                "src": "src",
+                "srcSet": "srcSet",
+              }
+            }
+            loading="lazy"
+          />
+        </WithStyles(ForwardRef(Grid))>
+      </WithStyles(ForwardRef(Grid))>
+    </Hidden>
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      direction="row"
+      spacing={4}
+    >
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        sm={12}
+      >
+        <Projects />
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+  </Layout>
+</React.Fragment>
+`;
