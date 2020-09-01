@@ -12,7 +12,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <React.Fragment>
-      <header className={header}>
+      <header data-e2e='header' className={header}>
         <div className={headerWrap}>
           <Grid container direction='row' justify='flex-start' spacing={1} >
             

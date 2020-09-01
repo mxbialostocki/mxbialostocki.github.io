@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<footer
+  className="makeStyles-footer-7"
+>
+  <div
+    className="makeStyles-footerWrap-8"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-align-items-xs-flex-start"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body2"
+        >
+          © 
+          2020
+          , Built by
+           
+          <a
+            href="/"
+          >
+            <span
+              className="makeStyles-primary-1"
+            >
+              mxbialostocki
+            </span>
+          </a>
+           with
+           
+          <a
+            href="https://www.gatsbyjs.org"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Gatsby
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+`;

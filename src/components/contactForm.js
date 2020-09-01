@@ -3,7 +3,7 @@ import axios from "axios";
 // import Link from "../components/link"
 import { Grid, Button, FormControl, Input, InputLabel, Typography } from "@material-ui/core"
 
-const ContactFormTut = () => {
+const ContactForm = () => {
     
   const [serverState, setServerState] = useState({
     submitting: false,
@@ -88,4 +88,4 @@ const ContactFormTut = () => {
   )
 }
 
-export default ContactFormTut;
+export default ContactForm
