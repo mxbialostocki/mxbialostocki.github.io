@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link renders correctly 1`] = `
+<a
+  rel="noreferrer"
+  target="_blank"
+/>
+`;
